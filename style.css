@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(238, 238, 255);
+}
+.head_main {
+    border: 0px;
+    border-color: rgb(145, 145, 248);
+    background-color: rgb(134, 207, 255);
+    width: 500;
+}
+
+.head_main.logo{
+    float:left
+}
+
+.head_main.unionba {
+    float: right;
+}
