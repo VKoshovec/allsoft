@@ -1,4 +1,4 @@
-body {
+/*body {
     background-color: rgb(238, 238, 255);
 }
 .head_main {
@@ -15,3 +15,64 @@ body {
 .head_main.unionba {
     float: right;
 }
+*/
+/*    font-family: 'Raleway',
+    sans-serif;
+
+    font-family: 'Roboto',
+    sans-serif;*/ 
+
+    body {
+        font-family: 'Roboto',
+            sans-serif;
+            font-weight: 400;
+    }
+    
+    .container{
+        margin: 20px;
+        padding: 30px;
+        background-color: lavender;
+    }
+    /*==============HEADER===================*/
+    /*==============LOGO===================*/
+     
+    .logo{
+        font-family: 'Raleway',
+            sans-serif;
+            font-weight: 700;
+            font-size: 3em;
+            color: crimson;
+            text-decoration: none;
+    }
+    .logo span {
+        color: dodgerblue;
+    }
+    /*==============/LOGO===================*/
+    
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 2px gray;
+        background-color: azure;
+    }
+
+    .menuitem {
+        display: flex;
+        list-style: none;
+    }
+    
+
+    .menuitem > .item{
+       margin-right: 3em;
+    }
+
+    .link {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        color: crimson;
+    }
+            
+    /*==============/HEADER===================*/
