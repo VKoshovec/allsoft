@@ -76,3 +76,22 @@
     }
             
     /*==============/HEADER===================*/
+    /*==============PRODS===================*/
+    .prod-list{
+        list-style: none;
+    }
+
+    .section-container{
+        
+    }
+
+    .section-title{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+    }
+
+    .prod-box{
+        display: block;
+    }
+    /*==============/PRODS===================*/
