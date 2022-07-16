@@ -32,6 +32,10 @@
         padding: 0px;
         list-style: none;
     }
+
+    a{
+        text-decoration: none;
+    }
     
     
 
@@ -53,8 +57,7 @@
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
-        padding: 30px;
- 
+     
     }
 
     .section{
@@ -70,6 +73,15 @@
     }
 
     /*==============HEADER===================*/
+
+    .site_head{
+        
+        border-bottom: 1px solid gray;
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+    }
+
     /*==============LOGO===================*/
      
     .logo{
@@ -90,7 +102,6 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        border-bottom: 1px solid gray;
      
     }
 
