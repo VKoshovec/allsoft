@@ -22,17 +22,53 @@
     font-family: 'Roboto',
     sans-serif;*/ 
 
+    h1,h2,h3,h4 {
+        margin: 0px;
+        padding: 0px;
+    } 
+
+    ul, ol{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    
+    
+
+    :root{
+
+      --navcolorlink: rgb(255, 98, 71);
+      --navcolorlinkhov:  rgb(123, 189, 255);
+    }
+
+
     body {
         font-family: 'Roboto',
-            sans-serif;
-            font-weight: 400;
+        sans-serif;
+        font-weight: 400;
     }
     
     .container{
-        margin: 20px;
+        
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 30px;
-        background-color: lavender;
+ 
     }
+
+    .section{
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    
+
+    h2 {
+        font-size: 20px;
+        line- height: 1.5; 
+    }
+
     /*==============HEADER===================*/
     /*==============LOGO===================*/
      
@@ -50,10 +86,12 @@
     /*==============/LOGO===================*/
     
     .menu{
+
         display: flex;
+        align-items: center;
         justify-content: space-around;
-        border-bottom: 2px gray;
-        background-color: azure;
+        border-bottom: 1px solid gray;
+     
     }
 
     .menuitem {
@@ -71,27 +109,43 @@
         text-decoration: none;
         text-transform: uppercase;
         font-family: 'Raleway', sans-serif;
-        font-size: 20px;
-        color: crimson;
+        font-size: 18px;
+        color: var(--navcolorlink);
     }
             
-    /*==============/HEADER===================*/
-    /*==============PRODS===================*/
-    .prod-list{
-        list-style: none;
+    .link:hover, .link:focus{
+
+        color: var(--navcolorlinkhov);
     }
 
-    .section-container{
+    /*==============/HEADER===================*/
+    /*==============PRODS===================*/
+    .section-title{
+
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+     }
+    
+    .prod-list{
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+
+    
+  
+    .prod-card {
         
     }
 
-    .section-title{
-     display: block;
-     margin-left: auto;
-     margin-right: auto;
-    }
+    .prod-card > h3 {
 
-    .prod-box{
-        display: block;
+        max-width: 200px;
+        text-align: center;
+        margin-bottom: 20px;
+      
     }
     /*==============/PRODS===================*/
