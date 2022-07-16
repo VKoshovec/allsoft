@@ -111,7 +111,7 @@
     }
     
 
-    .menuitem > .item{
+    .item:not(:last-child){
        margin-right: 3em;
     }
 
