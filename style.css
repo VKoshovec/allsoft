@@ -41,8 +41,8 @@
 
     :root{
 
-      --navcolorlink: rgb(255, 98, 71);
-      --navcolorlinkhov:  rgb(123, 189, 255);
+      --navcolorlink: rgb(61, 44, 48);
+      --navcolorlinkhov:  rgb(96, 118, 139);
     }
 
 
@@ -50,7 +50,8 @@
         font-family: 'Roboto',
         sans-serif;
         font-weight: 400;
-        background: linear-gradient(rgb(221, 221, 252), rgb(255, 223, 223) );
+        /* background: linear-gradient(rgb(221, 221, 252), rgb(255, 223, 223) );
+        background-attachment: fixed; */
     }
     
     .container{
@@ -134,14 +135,16 @@
     /*==============HERO===================*/
     .hero{
         display: flex;
-        height: 450px;
-            
-        background-image: url(./images/Self_Managing_Teams.jpg);
+        height: 550px;
+          
+        /* background-image: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)); */
+
+        background-image: linear-gradient(rgba(100, 100, 100, 0.8), rgba(100, 100, 100, 0.8)), url(./images/Self_Managing_Teams.jpg);
         background-position: center;
-        background-size: contain;
+        object-fit: contain;
         background-repeat: no-repeat;
 
-        background: linear-gradient(rgba(100, 100, 100, 0.3), rgba(100, 100, 100, 0.3));
+        
 
         justify-content: center;
         align-items: center;
@@ -186,3 +189,18 @@
       
     }
     /*==============/PRODS===================*/
+
+    .page-footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+   
+        background-image: linear-gradient(rgba(100, 100, 100, 0.8), rgba(100, 100, 100, 0.8));
+    }
+
+    .footer-item a{
+        color: #ffffff;
+    }
+
+    .footer-item:not(:last-child){
+      margin-bottom: 5px;
+    }
