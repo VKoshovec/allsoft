@@ -2,6 +2,13 @@
     background-color: rgb(238, 238, 255);
 } */
 
+body,
+::before,
+::after{
+    margin: 0px;
+    padding: 0px;
+}
+
     h1,h2,h3,h4 {
         margin: 0px;
         padding: 0px;
@@ -42,15 +49,16 @@
     }
 
     .section{
-        margin-top: 35px;
-        margin-bottom: 35px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
 
     
 
     h2 {
         font-size: 20px;
-        line- height: 1.5; 
+        line-height: 1.5; 
+        text-transform: uppercase;
     }
 
 
@@ -158,7 +166,7 @@
           
         background-color: rgb(210, 209, 209); 
 
-        background-image: linear-gradient(rgba(210, 209, 209, 0.4), rgba(210, 209, 209, 0.4)), url(./images/Self_Managing_Teams.jpg);
+        background-image: linear-gradient(rgba(210, 209, 209, 0.2), rgba(210, 209, 209, 0.2)), url(./images/Self_Managing_Teams.jpg);
         background-position: center;
         object-fit: contain;
         background-repeat: no-repeat;
@@ -166,6 +174,9 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+
+        padding-bottom: 60px;
+        margin-bottom: 60px;
     }
 
     .hero-title{
@@ -190,6 +201,7 @@
 
     /*==============PRODS===================*/
 
+
     .section-title{
 
         text-align: center;
@@ -208,16 +220,59 @@
     
   
     .prod-card {
+
+        display:block;
+        justify-content: center;
+        align-items: center;
+
+        padding: 20px;
+        background-color: rgb(248, 248, 248);
+
+        border-radius: 5px;
+
+        box-shadow: 5px 5px 2px 2px rgb(157, 157, 157), 
+        3px 3px 3px 2px rgb(212, 211, 211);
+        
         
     }
 
+    .thumb {
+        display: block;
+        width: 300px;  
+        margin: 0px, 10px;
+        margin-bottom: 20px;
+
+    }
+
+    .prod-foto{
+        display: inline-block;
+        width: 95%;
+
+        margin-bottom: 20px;
+    }
+
+   
+
     .prod-card > h3 {
 
-        max-width: 200px;
+        margin: 0px;
+        padding:0px;
+        max-width: 350px;
+        text-align: center;
+        margin-bottom: 40px;
+
+        text-transform: uppercase;
+          
+    }
+
+    .prod-card > p{
+        margin: 0px;
+        padding:0px;
+        max-width: 350px;
         text-align: center;
         margin-bottom: 20px;
-      
     }
+
     /*==============/PRODS===================*/
 
     .page-footer{
