@@ -37,8 +37,7 @@ body,
         font-family: 'Roboto',
         sans-serif;
         font-weight: 400;
-        /* background: linear-gradient(rgb(221, 221, 252), rgb(255, 223, 223) );
-        background-attachment: fixed; */
+ 
     }
     
     .container{
@@ -94,7 +93,7 @@ body,
     .banner:hover{
         
         background-color: rgba(6, 75, 112, 0.9);
-        transform: translate(100%, 100%);
+        transform: translate(50%, 50%) scale(1.5);
 
     }
 
@@ -117,6 +116,7 @@ body,
             font-size: 3em;
             color: crimson;
             text-decoration: none;
+
     }
     .logo span {
         color: dodgerblue;
