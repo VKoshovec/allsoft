@@ -29,7 +29,7 @@ body,
     :root{
 
       --navcolorlink: rgb(61, 44, 48);
-      --navcolorlinkhov:  rgb(96, 118, 139);
+      --navcolorlinkhov:  rgb(64, 163, 255);
     }
 
 
@@ -80,7 +80,7 @@ body,
         flex-direction: column;
 
         transition-property: background-color, transform;
-        transition-duration: 2000ms;
+        transition-duration: 1000ms;
         transition-timing-function: linear;
         transition-delay: 0;
     }
