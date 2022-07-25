@@ -53,7 +53,7 @@ body,
     
 
     h2 {
-        font-size: 20px;
+        font-size: 30px;
         line-height: 1.5; 
         text-transform: uppercase;
     }
@@ -93,6 +93,26 @@ body,
         background-color: rgba(6, 75, 112, 0.9);
         transform: translate(150%, 150%) scale(1.5);
 
+    }
+
+    .scroll{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: fixed;
+        bottom: 100px;
+        right: 300px;
+
+        color:rgba(43, 103, 255, 0.5);
+    }
+
+    .scroll-icon{
+        fill: currentColor;
+    }
+
+    .scroll:hover{
+        color:rgba(4, 50, 169, 0.9);
     }
 
     /*==============HEADER===================*/
@@ -220,9 +240,11 @@ body,
   
     .prod-card {
 
-        display:block;
+        display:flex;
         justify-content: center;
         align-items: center;
+
+        flex-direction: column;
 
         width: 350px;
         height: 300px;
@@ -257,11 +279,12 @@ body,
 
     .prod-card > h3 {
 
+        display: block;
         margin: 0px;
         padding:0px;
         max-width: 350px;
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
 
         text-transform: uppercase;
           
@@ -269,18 +292,20 @@ body,
 
     .prod-card > p{
     
+        display: block;
         margin: 0px;
         padding:0px;
         max-width: 350px;
         text-align: center;
         margin-top: auto;
         margin-bottom: 20px;
+
+        font-size: 18px;
+
+
+        color: rgb(55, 88, 251);
     }
 
-    .prod-card > h3{
-        margin:0px;
-        padding: 0px;
-    }
 
     /*==============/PRODS===================*/
 
