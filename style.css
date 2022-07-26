@@ -48,6 +48,8 @@ body,
     .section{
         margin-top: 60px;
         margin-bottom: 60px;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     
@@ -79,8 +81,9 @@ body,
 
         transition-property: background-color, transform;
         transition-duration: 1000ms;
-        transition-timing-function: ease-in-out;
+        transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
         transition-delay: 0;
+        z-index: 3;
     }
 
     .banner-link{
@@ -94,6 +97,7 @@ body,
         transform: translate(150%, 150%) scale(1.5);
 
     }
+
 
     .scroll{
         display: flex;
@@ -234,12 +238,14 @@ body,
         flex-wrap: wrap;
         justify-content: space-around;
         gap:30px;
+        
     }
 
     
   
     .prod-card {
 
+        position: relative; 
         display:flex;
         justify-content: center;
         align-items: center;
@@ -255,11 +261,34 @@ body,
         border-radius: 5px;
 
         box-shadow: 5px 5px 2px 2px rgb(157, 157, 157), 
-        3px 3px 3px 2px rgb(212, 211, 211);
-        
-        
+        3px 3px 3px 1px rgb(212, 211, 211);
+
+        transition: transform 250ms linear;
+        z-index: 2;
     }
 
+ 
+    .prod-card::after{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 200%;
+        height: 200%;
+        background-image: radial-gradient(rgba(201, 201, 201, 0.8), rgba(255, 255, 255, 0.8));
+
+        z-index: 1;
+        opacity: 1;
+        pointer-events: none;
+        transition: opacity 250ms linear;
+    }
+
+    .prod-card:hover::after, .prod-card:hover{
+        transform: scale(150%);
+        opacity: 1;
+       
+    }
+    
+   
     .thumb {
         display: block;
         width: 300px;  
@@ -308,6 +337,23 @@ body,
 
 
     /*==============/PRODS===================*/
+
+    .article-h{
+        margin: 0;
+        padding: 0;
+
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .article-text{
+        margin: 0;
+        padding: 0;
+
+        font-size: 20px;
+    }
+    
+
 
     .page-footer{
         padding-top: 30px;
