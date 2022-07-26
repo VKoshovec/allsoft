@@ -168,13 +168,14 @@ body,
         text-decoration: none;
         text-transform: uppercase;
         font-family: 'Raleway', sans-serif;
-        font-size: 18px;
+        font-size: 20px;
         color: var(--navcolorlink);
     }
             
     .link:hover, .link:focus{
 
         color: var(--navcolorlinkhov);
+        text-shadow: 5px 5px 4px rgba(210, 209, 209, 0.7);
     }
 
     /*==============/HEADER===================*/
@@ -233,12 +234,12 @@ body,
      }
     
     .prod-list{
-        
+      
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         gap:30px;
-        
+     
     }
 
     
@@ -260,31 +261,19 @@ body,
 
         border-radius: 5px;
 
-        box-shadow: 5px 5px 2px 2px rgb(157, 157, 157), 
+        box-shadow: 5px 5px 4px 2px rgb(157, 157, 157), 
         3px 3px 3px 1px rgb(212, 211, 211);
 
         transition: transform 250ms linear;
-        z-index: 2;
+      
     }
 
- 
-    .prod-card::after{
-        content: "";
-        position: absolute;
-        display: block;
-        width: 200%;
-        height: 200%;
-        background-image: radial-gradient(rgba(201, 201, 201, 0.8), rgba(255, 255, 255, 0.8));
-
-        z-index: 1;
-        opacity: 1;
-        pointer-events: none;
-        transition: opacity 250ms linear;
-    }
-
-    .prod-card:hover::after, .prod-card:hover{
+    .prod-card:hover{
         transform: scale(150%);
-        opacity: 1;
+        z-index: 1;
+        box-shadow: 
+        0px 0px 45px 40px rgb(157, 157, 157), 
+        0px 0px 0px 7px rgb(212, 211, 211);
        
     }
     
