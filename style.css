@@ -390,11 +390,9 @@ body,
 
     .job-item{
         
-        position: relative;
         display: block;
-        width: 70%;
+        width: 600px;
       
-
         font-size: 20px;
         line-height: 1.2;
         font-weight: 700;
@@ -408,33 +406,36 @@ body,
         box-shadow: 5px 5px 4px 2px rgb(157, 157, 157), 
         3px 3px 3px 1px rgb(212, 211, 211);
 
-        overflow: hidden;
+        /* overflow: hidden; */
 
-        transition: transform 250ms linear;
+    }
+
+    .job-item-block{
+        position: relative;
     }
 
     .job-item-diskr{
         
         position: absolute;
         display: block;
-              
+                     
         font-size: 16px;
         
-        width: 100%;
+        width: 600px;
         height: 100%;
-    
-        top:30px;
-        left:0;
-        opacity: 0;
+            
+        left: 0;
 
         background-color: blue;
-        
-        transition: opacity 250ms linear;
+       
+        transition: transform 250ms linear
     }
 
-    .job-item:hover .job-item-diskr{
-        transform: scalex(1.2) scaley(1.5);
-        opacity: 1;
+    .job-item:hover, .job-item-diskr{
+
+        transform: scaley(1.2);
+        overflow: visible;
+    
     }
 
 
