@@ -376,7 +376,7 @@ body,
     }
 
     .prod-card:hover{
-        transform: scale(150%);
+        transform: scale(120%);
         z-index: 1;
         box-shadow: 
         0px 0px 45px 40px rgb(157, 157, 157), 
@@ -469,9 +469,9 @@ body,
     .job-list-kbs,
     .job-list-bas{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+        
     }
 
     .article-sub{
@@ -484,14 +484,16 @@ body,
     .job-item{
         position: relative;
         display: block;
-        width: 600px;
+        width: 250px;
       
         font-size: 16px;
         line-height: 1.2;
         font-weight: 700;
+        text-align: center;
 
         padding: 10px;
         margin: 10px;
+        padding-top: 30px;
 
         background-color: ghostwhite;
         border-radius: 3px;
@@ -514,10 +516,14 @@ body,
 
 
     .job-icon{
+        position: absolute;
         display: inline-block;
         font-size: 20px;
         color: darkgreen;
         margin-right: 10px;
+
+        top: 5px;
+        left: 5px;
     }
 
     .job-icon-b{
@@ -555,7 +561,7 @@ body,
 
     .album-item:hover{
 
-        transform: scale(1.2);
+        transform: scale(1.1);
         box-shadow: 6px 5px 4px 4px rgb(157, 157, 157), 
         4px 4px 4px 2px rgb(212, 211, 211);
 
@@ -578,6 +584,10 @@ body,
 
         text-transform: uppercase;
         color: rgb(55, 88, 251);
+    }
+
+    .article-cont{
+        margin-left: 20px;
     }
 
     .in-article{
@@ -604,6 +614,7 @@ body,
     .page-footer{
         padding-top: 30px;
         padding-bottom: 30px;
+        padding-left: 20px;
    
         background-image: linear-gradient(rgba(100, 100, 100, 0.8), rgba(100, 100, 100, 0.8));
     }
