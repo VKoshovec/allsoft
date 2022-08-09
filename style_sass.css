@@ -137,7 +137,10 @@ body {
   color: var(--navcolorlinkhov);
   text-shadow: 5px 5px 4px rgba(210, 209, 209, 0.7);
 }
-.menu__link:hover__mobile, .menu__link:focus__mobile {
+.menu__mobile {
+  display: none;
+}
+.menu__mobile__icon {
   display: none;
 }
 
@@ -422,7 +425,13 @@ body {
     display: none;
   }
   .menu__mobile {
-    display: inline;
+    display: block;
+  }
+  .menu__mobile__icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    fill: rgb(64, 163, 255);
   }
   .article__text {
     padding: 10px;

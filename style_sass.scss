@@ -165,12 +165,17 @@ $colors: (
     &__link:focus{
     color: var(--navcolorlinkhov);
     text-shadow: 5px 5px 4px rgba(210, 209, 209, 0.7);
-
+    
+    }
     &__mobile{
         display: none;
     }
 
+    &__mobile__icon{
+        display: none;
     }
+
+    
 }
 /*==============/HEADER===================*/
 
@@ -516,6 +521,7 @@ $colors: (
     // mobilemenu
 
     .menu{
+
         flex-direction: column;
         
     &__list{
@@ -523,8 +529,15 @@ $colors: (
     }
 
     &__mobile{
-        display: inline;
+        display: block;   
     }
+    &__mobile__icon{
+        display: block; 
+        width:30px;
+        height: 30px;  
+        fill: map-get($colors, 'navcolorlinkhov'); 
+    }
+
     }
     
     .article__text{
