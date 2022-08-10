@@ -438,7 +438,7 @@ body {
     font-size: 18px;
   }
   .job-list,
-.job-list {
+  .job-list {
     display: flex;
     justify-content: center;
     align-items: center;
