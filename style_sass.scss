@@ -349,8 +349,9 @@ $colors: (
 &__sub{
     font-size: 20px;
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 20px;
 }
 
 &__cont{
@@ -361,58 +362,55 @@ $colors: (
 /*==============/article===================*/
 
 /* ===================jobs========================== */
-.job-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
+.job{
+&__list{   
+   width: 100%;
 }
 
-.job-item{
-    position: relative;
+&__item{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+    &:nth-child(2n){
+        background-color: rgba(213, 225, 255, 0.9);
+    }
+    &:not(:last-child){
+        margin-bottom: 10px;
+    }
+}
+
+&__text{
     display: block;
-    width: 250px;
+    margin: 0;
+    padding: 5px;
+
+    width: 70%;
+
+    margin-left: 0;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 700;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    padding-top: 30px;
-    background-color: ghostwhite;
-    border-radius: 3px;
-    box-shadow: 5px 5px 4px 2px rgb(157, 157, 157), 
-    3px 3px 3px 1px rgb(212, 211, 211);
+}
 
-    transition: transform 250ms linear;
+&__deskr{
+     
+    display: block;
+    margin: 0;
+    padding: 0;
 
-    &__deskr{
-        display: block;
-        padding: 10px;
-        margin: 0;
-    }
+    width: 30%;
 
-    &:hover {
-        transform: scale(1.2);
-    }
+    margin-right: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
 
-    &__icon{
-        position: absolute;
-        display: inline-block;
-        font-size: 20px;
-        color: darkgreen;
-        margin-right: 10px;
-    
-        top: 5px;
-        left: 5px;
-    }
-
-    &__icon--green{
-        display: inline-block;
-        font-size: 24px;
-        color: rgb(55, 88, 251);
-        margin-right: 10px;
-    }
+}
 }
 /* ===================/jobs========================== */
 
@@ -494,6 +492,43 @@ $colors: (
     &__logo__span{
         color: map-get($colors,'navcolorlinkhov');
     }
+
+    &__columns{
+       display: flex;
+
+       @media screen and (max-width:500px){
+        width: 500px;
+        display: block;
+        width: 100%;
+       }
+    }
+
+    &__map{
+        display: inline-block;
+        margin-left: calc(100%/5);
+
+        @media screen and (max-width:500px){
+           
+            display: block;
+            margin: 0;
+            padding: 0;
+           }
+    }
+
+    &__nav{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+        @media screen and (max-width:500px){
+            
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            
+            margin-bottom: 20px;
+           }
+    }
 }
  /* ===================/Footer====================== */
 
@@ -531,7 +566,6 @@ $colors: (
         display: block;   
     }
     &__mobile__icon{
-        
         display: block; 
         width: 30px;
         height: 30px;  
@@ -545,13 +579,6 @@ $colors: (
         font-size: 18px;            
     }
 
-    .job-list,
-    .job-list{
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-    }
-}  
+    }  
 
  //mobile

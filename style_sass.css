@@ -287,8 +287,9 @@ body {
 .article__sub {
   font-size: 20px;
   text-align: center;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-bottom: 20px;
 }
 .article__cont {
   margin-left: 20px;
@@ -296,51 +297,43 @@ body {
 
 /*==============/article===================*/
 /* ===================jobs========================== */
-.job-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
+.job__list {
+  width: 100%;
 }
-
-.job-item {
-  position: relative;
+.job__item {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.job__item:nth-child(2n) {
+  background-color: rgba(213, 225, 255, 0.9);
+}
+.job__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.job__text {
   display: block;
-  width: 250px;
+  margin: 0;
+  padding: 5px;
+  width: 70%;
+  margin-left: 0;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
-  text-align: center;
-  padding: 10px;
-  margin: 10px;
-  padding-top: 30px;
-  background-color: ghostwhite;
-  border-radius: 3px;
-  box-shadow: 5px 5px 4px 2px rgb(157, 157, 157), 3px 3px 3px 1px rgb(212, 211, 211);
-  transition: transform 250ms linear;
 }
-.job-item__deskr {
+.job__deskr {
   display: block;
-  padding: 10px;
   margin: 0;
-}
-.job-item:hover {
-  transform: scale(1.2);
-}
-.job-item__icon {
-  position: absolute;
-  display: inline-block;
-  font-size: 20px;
-  color: darkgreen;
-  margin-right: 10px;
-  top: 5px;
-  left: 5px;
-}
-.job-item__icon--green {
-  display: inline-block;
-  font-size: 24px;
-  color: rgb(55, 88, 251);
-  margin-right: 10px;
+  padding: 0;
+  width: 30%;
+  margin-right: 0;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
 /* ===================/jobs========================== */
@@ -403,6 +396,40 @@ body {
 .page-footer__logo__span {
   color: rgb(64, 163, 255);
 }
+.page-footer__columns {
+  display: flex;
+}
+@media screen and (max-width: 500px) {
+  .page-footer__columns {
+    width: 500px;
+    display: block;
+    width: 100%;
+  }
+}
+.page-footer__map {
+  display: inline-block;
+  margin-left: 20%;
+}
+@media screen and (max-width: 500px) {
+  .page-footer__map {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
+.page-footer__nav {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 500px) {
+  .page-footer__nav {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
 
 /* ===================/Footer====================== */
 @media (max-width: 500px) {
@@ -436,11 +463,5 @@ body {
   .article__text {
     padding: 10px;
     font-size: 18px;
-  }
-  .job-list,
-.job-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }/*# sourceMappingURL=style_sass.css.map */
