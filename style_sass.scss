@@ -1,3 +1,6 @@
+$navcolorlink: rgb(61, 44, 48);
+$navcolorlinkhov:  rgb(64, 163, 255);
+
 body,
 ::before,
 ::after{
@@ -34,10 +37,6 @@ body,
  
     }
     
-$colors: (
-  'navcolorlink': rgb(61, 44, 48),
-  'navcolorlinkhov':  rgb(64, 163, 255),
-);
 
 .container{
         
@@ -54,6 +53,17 @@ $colors: (
 }
 /*----------------banner-----------------*/
 .banner {
+
+    @media screen and (max-width: 1199px){
+        display: none;
+
+        &__link{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        
     display: flex;
     width: 300px;
     height: 80px;
@@ -88,28 +98,41 @@ $colors: (
     }
 }
 
+}
+
 /*----------------/banner-----------------*/
 
 /*----------------scroll------------------*/
 .scroll{
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     position: fixed;
-    bottom: 100px;
-    right: 300px;
-
     color:rgba(43, 103, 255, 0.5);
     z-index: 3;
 
     &__icon{
-        fill: currentColor;
+      fill: currentColor;
     }
 
     &:hover{
-        color:rgba(4, 50, 169, 0.9);
+       color:rgba(4, 50, 169, 0.9);
     }
+
+    @media screen and (max-width: 767px){
+
+        bottom: 25px;
+        right: 25px;   
+    }
+        
+
+    @media screen and (min-width: 768px){
+        bottom: 50px;
+        right: 150px;
+    }
+    
 }
 /*----------------/scroll------------------*/
 
@@ -130,7 +153,7 @@ $colors: (
     }
 
     &__logo__span {
-       color: map-get($colors,'navcolorlinkhov');
+       color: $navcolorlinkhov;
     }
 }
 
@@ -490,7 +513,7 @@ $colors: (
     }
 
     &__logo__span{
-        color: map-get($colors,'navcolorlinkhov');
+        color: $navcolorlinkhov;
     }
 
     &__columns{
@@ -538,14 +561,7 @@ $colors: (
 
     .container{
         max-width: 450px;
-    }
-
-    .banner{
-        display: none;
-    }
-
-    .scroll{
-        display: none;
+    
     }
 
     h2, h3{
@@ -555,23 +571,33 @@ $colors: (
     // mobilemenu
 
     .menu{
-
-        flex-direction: column;
         
     &__list{
         display: none;
     }
 
     &__mobile{
+
         display: block;   
-    }
-    &__mobile__icon{
-        display: block; 
-        width: 30px;
-        height: 30px;  
-        fill: map-get($colors, 'navcolorlinkhov'); 
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        width: 40px;
+        height: 40px; 
     }
 
+    &__mobile__icon{
+
+        display: inline-block; 
+        width: 40px;
+        height: 40px;  
+        fill: black; 
+        padding: 0;
+
+        &:hover, &:focus{
+            fill: $navcolorlinkhov;
+        }
+    }
     }
     
     .article__text{
@@ -579,6 +605,6 @@ $colors: (
         font-size: 18px;            
     }
 
-    }  
+}  
 
  //mobile
