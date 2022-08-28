@@ -15,16 +15,23 @@ body,
     } 
 
     h2 {
+
         font-size: 30px;
         line-height: 1.5; 
         text-transform: uppercase;
 
-        @media  (max-width: 500px) {
+        @media screen and (max-width: 500px) {
+                font-size: 18px;
+        
+        }
+    }
 
-            h2, h3{
+    h3 {
+
+        @media screen and (max-width: 500px) {
                 font-size: 16px;
-            }
-        } 
+        
+        }
     }
 
     ul, ol{
@@ -164,6 +171,7 @@ body,
     }
 
     &__logo{
+
         position: relative;
         font-family: 'Raleway',
         sans-serif;
@@ -176,6 +184,11 @@ body,
             position: relative;
             margin-left: 15px;
             font-size: 2em;
+        }
+
+        &--closed{
+            display: none;
+            position: unset;
         }
     }
 
@@ -239,11 +252,18 @@ body,
                
                 padding-left: 15px;
                 padding-right: 15px;
+                padding-top: 40px;
 
                 .menu__mobile__close{
 
                     display:block;
 
+                }
+                .site-header__logo--closed{
+                    display: block;
+                    position: absolute;
+                    top:16px;
+                    left:15px;
                 }
         }
 
@@ -341,7 +361,7 @@ body,
 
         display: none;
 
-        @media screen and (max-width:550px) {
+        @media screen and (max-width:500px) {
             display: inline-block; 
             width: 40px;
             height: 40px;  
@@ -658,6 +678,7 @@ body,
 
  /* ===================Footer====================== */
  .page-footer{
+    
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
@@ -681,11 +702,23 @@ body,
        display: flex;
 
        @media screen and (max-width:500px){
+        max-width: 500px;
+        display: block;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+       }
+
+
+       @media screen and (max-width: 767px) and (min-width:500px){
         width: 500px;
         display: block;
         width: 100%;
+        flex-direction: column;
+        align-items: center;
        }
     }
+
 
     &__map{
         display: inline-block;
@@ -700,6 +733,7 @@ body,
     }
 
     &__nav{
+
         display: inline-block;
         margin: 0;
         padding: 0;
