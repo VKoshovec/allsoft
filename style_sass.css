@@ -579,7 +579,15 @@ body {
   background-image: linear-gradient(rgba(100, 100, 100, 0.8), rgba(100, 100, 100, 0.8));
 }
 .page-footer__link {
+  margin: 0;
+  padding: 0;
+  display: block;
   color: #ffffff;
+}
+.page-footer__item {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 .page-footer__item:not(:last-child) {
   margin-bottom: 5px;
@@ -598,6 +606,7 @@ body {
     width: 100%;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 }
 .page-footer__map {
