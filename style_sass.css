@@ -61,6 +61,28 @@ body {
   padding-bottom: 30px;
 }
 
+.loader {
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/GuFDA.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+.loader-close {
+  transition: opacity 1s ease-out;
+  opacity: 0;
+}
+.loader-deley {
+  transition: display 2s ease-out;
+  display: none;
+}
+
 /*----------------banner-----------------*/
 @media screen and (max-width: 1199px) {
   .banner {
