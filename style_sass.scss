@@ -1,7 +1,6 @@
 $navcolorlink: rgb(61, 44, 48);
 $navcolorlinkhov:  rgb(64, 163, 255);
 
-
 body,
 ::before,
 ::after{
@@ -73,33 +72,8 @@ body,
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
-.loader { 
-    position: absolute;
-    z-index: 100;
-    width:100vw;
-    height:100vh;
-    background-image: url(./images/GuFDA.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: cover;
-    opacity: 1;
-    transition: opacity 1s ease-out;
-
-    &-close{
-      transition: opacity 1s ease-out;
-      opacity: 0;
-    }
-
-    &-deley {
-       transition: display 2s ease-out;
-       display: none;
-    }
-}
-
-
 /*----------------banner-----------------*/
+
 .banner {
 
     @media screen and (max-width: 1199px){
