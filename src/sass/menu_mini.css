@@ -1,3 +1,8 @@
+:root {
+  --brandblue: rgb(64, 163, 255);
+  --brandgray: rgb(83, 98, 136);
+}
+
 .menu__mini {
   visibility: hidden;
   position: fixed;
@@ -35,6 +40,13 @@
 .menu__mini__item:nth-child(4) {
   margin-bottom: 50px;
 }
+.menu__mini__link:hover, .menu__mini__link:focus {
+  color: var(--brandblue);
+}
+.menu__mini__link {
+  color: var(--brandgray);
+}
+
 .show {
   visibility: visible;
   transform: translate(0%);

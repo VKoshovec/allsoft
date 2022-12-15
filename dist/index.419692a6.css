@@ -15,6 +15,10 @@ h2 {
   line-height: 1.5;
 }
 
+:root {
+  --brandblue: #40a3ff;
+}
+
 @media screen and (max-width: 500px) {
   h2 {
     font-size: 18px;
@@ -151,8 +155,8 @@ body {
 }
 
 .site-header {
+  border-bottom: 3px solid var(--brandblue);
   background-color: #fff;
-  border-bottom: 1px solid gray;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -305,7 +309,7 @@ body {
 }
 
 .menu__link:hover, .menu__link:focus {
-  color: var(--navcolorlinkhov);
+  color: var(--brandblue);
   text-shadow: 5px 5px 4px #d2d1d1b3;
 }
 
@@ -363,8 +367,7 @@ body {
 }
 
 .hero {
-  height: 550px;
-  max-width: 1400px;
+  height: 600px;
   object-fit: contain;
   background-color: #d2d1d1;
   background-image: linear-gradient(#d2d1d133, #d2d1d133), url("Self_Managing_Teams.d25ce41e.jpg");
@@ -425,13 +428,12 @@ body {
   padding: 20px;
   transition: transform .25s linear;
   display: flex;
-  position: relative;
   box-shadow: 5px 5px 4px 2px #9d9d9d, 3px 3px 3px 1px #d4d3d3;
 }
 
 .prod-card:hover {
   z-index: 1;
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: 0 0 45px 40px #9d9d9d, 0 0 0 7px #d4d3d3;
 }
 
@@ -466,6 +468,58 @@ body {
   padding: 0;
   font-size: 18px;
   display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .prod-list {
+    gap: 15px;
+    padding: 5px;
+  }
+
+  .prod-card {
+    width: 170px;
+    height: 200px;
+    padding: 15px;
+  }
+
+  .prod-card:hover {
+    z-index: 1;
+    transform: scaleY(110%);
+    box-shadow: 0 0 45px 40px #9d9d9d, 0 0 0 7px #d4d3d3;
+  }
+
+  .prod-card__thumb {
+    width: 140px;
+    margin: 0px, 5px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .prod-card__foto {
+    width: 95%;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  .prod-card__name {
+    max-width: 130px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 14px;
+    display: block;
+  }
+
+  .prod-card__text {
+    max-width: 130px;
+    text-align: center;
+    color: var(--brandblue);
+    margin: auto 0 10px;
+    padding: 0;
+    font-size: 12px;
+    display: block;
+  }
 }
 
 .article__name {

@@ -16,6 +16,13 @@ h2 {
   line-height: 1.5;
   text-transform: uppercase;
 }
+
+:root{
+  --brandblue:  rgb(64, 163, 255);
+}
+
+
+
 @media screen and (max-width: 500px) {
   h2 {
     font-size: 18px;
@@ -153,7 +160,7 @@ body {
 /*----------------/scroll------------------*/
 /*==============HEADER===================*/
 .site-header {
-  border-bottom: 1px solid gray;
+  border-bottom: 3px solid var(--brandblue);
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #fff;
@@ -291,7 +298,7 @@ body {
   }
 }
 .menu__link:hover, .menu__link:focus {
-  color: var(--navcolorlinkhov);
+  color: var(--brandblue);
   text-shadow: 5px 5px 4px rgba(210, 209, 209, 0.7);
 }
 .menu__mobile {
@@ -347,8 +354,9 @@ body {
 /*==============HERO===================*/
 .hero {
   display: flex;
-  height: 550px;
-  max-width: 1400px;
+  height: 600px;
+  /* max-width: 1400px; */
+
   background-color: rgb(210, 209, 209);
   background-image: linear-gradient(rgba(210, 209, 209, 0.2), rgba(210, 209, 209, 0.2)), url(./images/Self_Managing_Teams.jpg);
   background-position: center;
@@ -360,6 +368,7 @@ body {
   padding-bottom: 60px;
   margin-bottom: 60px;
 }
+
 .hero__title {
   display: flex;
   padding: 50px 30px;
@@ -374,6 +383,7 @@ body {
 
 /*==============/HERO===================*/
 /*==============PRODS===================*/
+
 .section-title {
   display: flex;
   justify-content: center;
@@ -400,7 +410,7 @@ body {
 }
 
 .prod-card {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,8 +423,9 @@ body {
   box-shadow: 5px 5px 4px 2px rgb(157, 157, 157), 3px 3px 3px 1px rgb(212, 211, 211);
   transition: transform 250ms linear;
 }
+
 .prod-card:hover {
-  transform: scale(120%);
+  transform: scale(110%);
   z-index: 1;
   box-shadow: 0px 0px 45px 40px rgb(157, 157, 157), 0px 0px 0px 7px rgb(212, 211, 211);
 }
@@ -451,6 +462,60 @@ body {
   color: rgb(55, 88, 251);
 }
 
+@media screen and (max-width: 500px) {
+  .prod-list {
+    gap: 15px;
+    padding: 5px;
+  }
+
+  .prod-card {
+    width: 170px;
+    height: 200px;
+    padding: 15px;
+  }
+
+  .prod-card:hover {
+    transform: scaleY(110%);
+    z-index: 1;
+    box-shadow: 0px 0px 45px 40px rgb(157, 157, 157), 0px 0px 0px 7px rgb(212, 211, 211);
+  }
+
+  .prod-card__thumb {
+    display: block;
+    width: 140px;
+    margin: 0px, 5px;
+    margin-bottom: 5px;
+  }
+
+  .prod-card__foto {
+    display: inline-block;
+    width: 95%;
+    margin-bottom: 5px;
+  }
+
+  .prod-card__name {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    max-width: 130px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .prod-card__text {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    max-width: 130px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: var(--brandblue);
+  }
+}
 /*==============/PRODS===================*/
 /*==============article===================*/
 .article__name {
