@@ -39,4 +39,3 @@ ref.logoModalBtn.addEventListener('click', closeMini);
 ref.closeModalBtn1.addEventListener('click', closeMini); 
 ref.closeModalBtn2.addEventListener('click', closeMini); 
 ref.closeModalBtn3.addEventListener('click', closeMini); 
-
