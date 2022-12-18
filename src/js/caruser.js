@@ -7,17 +7,33 @@ const domContainer = document.querySelector('#reactapp');
 const root = ReactDOM.createRoot(domContainer);
 
    
-const Good = ({ name, price}) => {
-    return (
-    <div>
-        <p>{name}</p>
-        <></>
-    </div>)
-    };
+// const Good = ( sale ) => (
+
+// <ul class="carusel" style="display: flex; flex-direction: row; position: absolute; justify-content: space-around; background-color: #8889; padding: 10; gap: 20;">
+
+//      {sale.map((element, id) => 
+//          { <li class="carusel-card" style="display: flex; flex-direction: column; width: 250; height: 150; color: chocolate; align-items: center;"  key = {id}>
+//                     <img src="./images/prods/09c5e481123a4ddcff7f2ca8321c220d.png" style="width: 100%;" class="carusel-card__img"/>
+//                     <p class="carusel-card__name" style="margin: 0; padding: 0; padding-top: 5;">{ element.name }</p>
+//                     <p class="carusel-card__prise" style="margin: 0; padding: 0; padding-top: 5; color: brown;">{ element.price }</p>
+//         </li> })
+//      }
+
+// </ul> 
+
+// );
+
+const Good = <h1>Hello guys!!!</h1>;
 
 
-export function carusel (goods) {
 
-} 
+root.render(Good);
 
-root.render(e(LikeButton));
+{/* <ul class="carusel" style="display: flex; flex-direction: row; position: absolute; justify-content: space-around; background-color: #8889; padding: 10; gap: 20;">
+                <li class="carusel-card" style="display: flex; flex-direction: column; width: 250; height: 150; color: chocolate; align-items: center;">
+                    <img src="./images/prods/09c5e481123a4ddcff7f2ca8321c220d.png" style="width: 100%;" class="carusel-card__img"/>
+                    <p class="carusel-card__name" style="margin: 0; padding: 0; padding-top: 5;">Name</p>
+                    <!-- <p class="carusel-card__text"style="margin: 0; padding: 0; padding-top: 5;">TEXT text</p> -->
+                    <p class="carusel-card__prise" style="margin: 0; padding: 0; padding-top: 5; color: brown;">1000.00</p>
+                </li>
+</ul> */}
